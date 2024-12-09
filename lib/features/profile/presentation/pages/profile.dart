@@ -1,10 +1,8 @@
-import 'dart:developer';
-
 import 'package:easy_mrt/core/shared/mixin/theme.dart';
-import 'package:easy_mrt/core/shared/nfc/nfc_reader.dart';
 import 'package:easy_mrt/core/shared/resource.dart';
 import 'package:easy_mrt/core/shared/task_notifier.dart';
 import 'package:easy_mrt/core/shared/widgets/custom_container.dart';
+import 'package:easy_mrt/features/acknowledgments/presentation/pages/acknoledgement.dart';
 import 'package:easy_mrt/features/authentication/presentation/cubit/authentication_cubit.dart';
 import 'package:easy_mrt/features/my_cards/presentation/bloc/find_all_bloc.dart';
 import 'package:easy_mrt/features/my_cards/presentation/pages/my_cards.dart';
@@ -391,6 +389,29 @@ class _ProfilePageState extends State<ProfilePage> with ThemeMixin {
                                               const CupertinoListTileChevron(),
                                         ),
                                         16.verticalSpace,
+                                        CupertinoListTile(
+                                          title: Text(
+                                            "Acknowledgement/About",
+                                            style: TextStyle(
+                                              color: isDarkMode
+                                                  ? theme.textPrimary
+                                                  : const Color(0xFF1B1E28),
+                                            ),
+                                          ),
+                                          onTap: () {
+                                            context.pushNamed(
+                                                AcknowledgementPage.name);
+                                          },
+                                          leading: Image.asset(
+                                            R.ASSETS_ICONS_ACKNOLEDGEMENT_PNG,
+                                          ),
+                                          subtitle: const Text(
+                                              "Acknowledgement and about page"),
+                                          trailing:
+                                              const CupertinoListTileChevron(),
+                                        ),
+                                        16.verticalSpace,
+
                                         CupertinoListTile(
                                           title: Text(
                                             "Log out",

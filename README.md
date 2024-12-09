@@ -14,9 +14,21 @@ This project is inspired by the work of Aniruddha Adhikary, who originally creat
 
 We thank [Aniruddha Adhikary](https://github.com/aniruddha-adhikary) for their contribution to open-source development. You can view the original repository [here](https://github.com/aniruddha-adhikary/mrt-buddy/).
 
-## Setup Instructions
+## Extended Features
+- **Firebase Authentication**: Users can sign in using Firebase authentication.
+- **Card Management**: Users can manage their cards and view their fare history.
+- **Change Card Holder Name**: Users can update the card holder name.
+- **Firebase Firestore Integration**: The app uses Firebase Firestore to store fare data and user information.
+- **Android In-App Update**: The app supports Android In-App Update functionality.
+- **Cross-Platform Support**: The app is built using Flutter, which allows it to run on both Android and iOS devices.
+- **Change Theme**: Users can switch between light and dark themes.
+- **Account Deletion**: Users can delete their account and all associated data from the app.
+- **User Profile Update**: Users can update their profile information.
+- **Google Ads Integration**: The app includes Google Ads functionality.
+    To get started with this project, follow the steps below:
 
-To get started with this project, follow the steps below:
+
+## Setup Instructions
 
 ### 1. Create a Firebase Project
 
@@ -60,7 +72,7 @@ Each key represents a route, and the value represents the fare for that route in
 To start working with the project, clone the repository to your local machine.
 
 ```bash
-git clone https://github.com/yourusername/your-repository-name.git
+git clone https://github.com/Piistech/MetroEase.git
 ```
 
 ### 3. Install Dependencies
@@ -68,7 +80,7 @@ git clone https://github.com/yourusername/your-repository-name.git
 Once the repository is cloned, navigate to the project directory and install the necessary dependencies.
 
 ```bash
-cd your-repository-name
+cd MetroEase
 flutter pub get
 ```
 
@@ -104,12 +116,6 @@ service cloud.firestore {
 
 ### 7. Additional Setup (Optional)
 
-Feel free to explore and extend the project. You can add additional features like:
-- Route search functionality
-- Card payment integration
-- Custom UI/UX for a better user experience
-
-### 8. Additional Features (Google ADs)
 
 ### Google Ads Integration
 
@@ -131,9 +137,10 @@ googleAdsUnit/ads
 
 Replace `"KEY"` with the actual keys provided by Google Ads for both Android and iOS.
 
----
 
-This will guide users through setting up Google Ads within the project. Let me know if you need any other adjustments!
+### 8. Android In-App Update Integration
+
+This project also includes Android In-App Update functionality. You don't need to do anything to enable this feature. It is already integrated into the project.
 
 ## License
 
@@ -142,4 +149,4 @@ This project is licensed under the **GPL-3.0 License**. See the [LICENSE](LICENS
 ## Acknowledgements
 
 - This project is inspired by the work of **Aniruddha Adhikary**, whose original project provided the core fare calculation functionality.
-- Thanks to **PIISTECH LTD** for contributing to and extending this project.
+- Thanks to **[PIISTECH LTD](https://www.piistech.com/)** for contributing to and extending this project.

@@ -1,4 +1,5 @@
 import 'package:easy_mrt/core/config/config.dart';
+import 'package:easy_mrt/features/acknowledgments/presentation/pages/acknoledgement.dart';
 import 'package:easy_mrt/features/authentication/authentication.dart';
 import 'package:easy_mrt/features/authentication/domain/entities/user_entity.dart';
 import 'package:easy_mrt/features/authentication/presentation/cubit/forgot_password_cubit.dart';
@@ -74,11 +75,6 @@ final router = GoRouter(
               path: FarePage.path,
               name: FarePage.name,
               pageBuilder: (context, state) {
-                // final ValueNotifier<CardTranslationEntities> nfcData =
-                //     state.extra == null
-                //         ? ValueNotifier<CardTranslationEntities>(
-                //             CardTranslationEntities.empty())
-                //         : state.extra as ValueNotifier<CardTranslationEntities>;
                 return NoTransitionPage(
                   key: state.pageKey,
                   child: BlocProvider.value(
@@ -97,11 +93,6 @@ final router = GoRouter(
               path: ScanMrtPage.path,
               name: ScanMrtPage.name,
               pageBuilder: (context, state) {
-                // final ValueNotifier<CardTranslationEntities> nfcData =
-                //     state.extra == null
-                //         ? ValueNotifier<CardTranslationEntities>(
-                //             CardTranslationEntities.empty())
-                //         : state.extra as ValueNotifier<CardTranslationEntities>;
                 return NoTransitionPage(
                   key: state.pageKey,
                   child: const ScanMrtPage(),
@@ -149,6 +140,13 @@ final router = GoRouter(
           create: (context) => sl<DeleteProfileBloc>(),
           child: AccountDeletion(user: user),
         );
+      },
+    ),
+    GoRoute(
+      path: AcknowledgementPage.path,
+      name: AcknowledgementPage.name,
+      builder: (context, state) {
+        return const AcknowledgementPage();
       },
     ),
     GoRoute(

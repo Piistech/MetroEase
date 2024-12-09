@@ -4,6 +4,9 @@
 class R {
   const R._();
 
+  static const String ASSETS_ICONS_ACKNOLEDGEMENT_PNG =
+      'assets/icons/acknoledgement.png';
+
   static const String ASSETS_ICONS_CARD_PNG = 'assets/icons/card.png';
 
   static const String ASSETS_ICONS_CART_DARK_SVG = 'assets/icons/cart_dark.svg';

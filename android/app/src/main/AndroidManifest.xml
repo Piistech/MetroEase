@@ -70,9 +70,11 @@
             android:resource="@xml/nfc_tech_filter" />
     
         <!-- AdsMod -->
+        <!-- un-comment this if you want google ads -->
         <meta-data
         android:name="com.google.android.gms.ads.APPLICATION_ID"
         android:value="@string/ads_id"/>
+        <!-- un-comment ends -->
          <!-- AdsMod End -->
     </application>
 
