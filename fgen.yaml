@@ -1,0 +1,11 @@
+include:
+  - assets/**
+
+watch: true
+# watch: true
+
+preview: false
+
+# output: lib/const/r.dart
+output: lib/core/shared/resource.dart
+name: R
