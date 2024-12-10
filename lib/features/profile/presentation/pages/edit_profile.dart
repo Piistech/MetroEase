@@ -1,13 +1,13 @@
-import 'package:easy_mrt/core/shared/mixin/theme.dart';
-import 'package:easy_mrt/core/shared/resource.dart';
-import 'package:easy_mrt/core/shared/shared.dart';
-import 'package:easy_mrt/core/shared/task_notifier.dart';
-import 'package:easy_mrt/core/shared/widgets/custom_container.dart';
-import 'package:easy_mrt/features/authentication/data/models/profile_update.dart';
-import 'package:easy_mrt/features/authentication/domain/entities/user_entity.dart';
-import 'package:easy_mrt/features/authentication/presentation/cubit/authentication_cubit.dart';
-import 'package:easy_mrt/features/authentication/presentation/pages/login_page.dart';
-import 'package:easy_mrt/features/profile/profile.dart';
+import '../../../../core/shared/mixin/theme.dart';
+import '../../../../core/shared/resource.dart';
+import '../../../../core/shared/shared.dart';
+import '../../../../core/shared/task_notifier.dart';
+import '../../../../core/shared/widgets/custom_container.dart';
+import '../../../authentication/data/models/profile_update.dart';
+import '../../../authentication/domain/entities/user_entity.dart';
+import '../../../authentication/presentation/cubit/authentication_cubit.dart';
+import '../../../authentication/presentation/pages/login_page.dart';
+import '../../profile.dart';
 import 'package:image_picker/image_picker.dart';
 
 class EditAccount extends StatefulWidget {

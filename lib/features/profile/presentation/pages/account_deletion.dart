@@ -1,11 +1,11 @@
-import 'package:easy_mrt/core/shared/mixin/theme.dart';
-import 'package:easy_mrt/core/shared/shared.dart';
-import 'package:easy_mrt/core/shared/task_notifier.dart';
-import 'package:easy_mrt/features/authentication/domain/entities/user_entity.dart';
-import 'package:easy_mrt/features/authentication/presentation/cubit/authentication_cubit.dart';
-import 'package:easy_mrt/features/profile/data/models/delete_payload.dart';
-import 'package:easy_mrt/features/profile/presentation/bloc/delete_bloc.dart';
-import 'package:easy_mrt/features/scan_mrt/scan_mrt.dart';
+import '../../../../core/shared/mixin/theme.dart';
+import '../../../../core/shared/shared.dart';
+import '../../../../core/shared/task_notifier.dart';
+import '../../../authentication/domain/entities/user_entity.dart';
+import '../../../authentication/presentation/cubit/authentication_cubit.dart';
+import '../../data/models/delete_payload.dart';
+import '../bloc/delete_bloc.dart';
+import '../../../scan_mrt/scan_mrt.dart';
 import 'package:flutter/cupertino.dart';
 
 class AccountDeletion extends StatefulWidget {

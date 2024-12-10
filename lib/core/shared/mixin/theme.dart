@@ -1,4 +1,4 @@
-import 'package:easy_mrt/core/shared/extension/theme.dart';
+import '../extension/theme.dart';
 import 'package:easy_mrt/core/shared/theme/scheme.dart';
 import 'package:easy_mrt/core/shared/theme/theme_bloc.dart';
 import 'package:flutter/material.dart';

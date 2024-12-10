@@ -1,5 +1,5 @@
-import 'package:easy_mrt/core/shared/shared.dart';
-import 'package:easy_mrt/core/shared/task_notifier.dart';
+import '../shared.dart';
+import '../task_notifier.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 

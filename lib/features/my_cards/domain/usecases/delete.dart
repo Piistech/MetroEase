@@ -1,4 +1,4 @@
-import 'package:easy_mrt/features/my_cards/data/models/delete_payload.dart';
+import '../../data/models/delete_payload.dart';
 
 import '../../../../core/shared/shared.dart';
 import '../../my_cards.dart';

@@ -1,6 +1,6 @@
 import 'dart:developer';
 
-import 'package:easy_mrt/core/config/config.dart';
+import '../../../../core/config/config.dart';
 import 'package:easy_mrt/core/shared/extension/authentication.dart';
 import 'package:easy_mrt/core/shared/mixin/theme.dart';
 import 'package:easy_mrt/core/shared/nfc/nfc_reader.dart';

@@ -1,6 +1,6 @@
 import 'dart:developer';
 
-import 'package:easy_mrt/core/shared/nfc/nfc_reader.dart';
+import '../../../../core/shared/nfc/nfc_reader.dart';
 import 'package:easy_mrt/core/shared/resource.dart';
 import 'package:easy_mrt/core/shared/widgets/custom_container.dart';
 import 'package:easy_mrt/features/fare/fare.dart';

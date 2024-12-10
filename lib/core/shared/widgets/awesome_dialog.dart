@@ -1,6 +1,6 @@
-import 'package:easy_mrt/core/shared/resource.dart';
-import 'package:easy_mrt/core/shared/shared.dart';
-import 'package:easy_mrt/core/shared/widgets/custom_container.dart';
+import '../resource.dart';
+import '../shared.dart';
+import 'custom_container.dart';
 
 class AwesomeDialog {
   static AwesomeDialog? _instance;

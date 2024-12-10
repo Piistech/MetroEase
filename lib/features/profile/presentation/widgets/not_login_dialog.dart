@@ -1,8 +1,8 @@
-import 'package:easy_mrt/core/shared/resource.dart';
-import 'package:easy_mrt/core/shared/shared.dart';
-import 'package:easy_mrt/core/shared/widgets/custom_container.dart';
-import 'package:easy_mrt/features/acknowledgments/presentation/pages/acknoledgement.dart';
-import 'package:easy_mrt/features/authentication/presentation/pages/login_page.dart';
+import '../../../../core/shared/resource.dart';
+import '../../../../core/shared/shared.dart';
+import '../../../../core/shared/widgets/custom_container.dart';
+import '../../../acknowledgments/presentation/pages/acknoledgement.dart';
+import '../../../authentication/presentation/pages/login_page.dart';
 
 class NotLoginDialog extends StatelessWidget {
   const NotLoginDialog({

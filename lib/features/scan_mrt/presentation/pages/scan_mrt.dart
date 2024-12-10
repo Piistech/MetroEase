@@ -1,7 +1,7 @@
-import 'package:easy_mrt/core/shared/nfc/nfc_reader.dart';
-import 'package:easy_mrt/features/scan_mrt/domain/entities/transaction.dart';
-import 'package:easy_mrt/features/scan_mrt/presentation/widgets/device_support_card.dart';
-import 'package:easy_mrt/features/scan_mrt/presentation/widgets/mrt_card_widget.dart';
+import '../../../../core/shared/nfc/nfc_reader.dart';
+import '../../domain/entities/transaction.dart';
+import '../widgets/device_support_card.dart';
+import '../widgets/mrt_card_widget.dart';
 import 'package:easy_mrt/features/scan_mrt/presentation/widgets/transaction_card.dart';
 
 import '../../../../core/shared/shared.dart';

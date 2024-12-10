@@ -1,10 +1,10 @@
 import 'dart:developer';
 
-import 'package:easy_mrt/features/acknowledgments/presentation/bloc/acknowledgment_bloc.dart';
-import 'package:easy_mrt/features/authentication/presentation/cubit/authentication_cubit.dart';
-import 'package:easy_mrt/features/authentication/presentation/cubit/navigation_container_cubit.dart';
-import 'package:easy_mrt/features/fare/fare.dart';
-import 'package:easy_mrt/features/my_cards/my_cards.dart';
+import 'features/acknowledgments/presentation/bloc/acknowledgment_bloc.dart';
+import 'features/authentication/presentation/cubit/authentication_cubit.dart';
+import 'features/authentication/presentation/cubit/navigation_container_cubit.dart';
+import 'features/fare/fare.dart';
+import 'features/my_cards/my_cards.dart';
 
 import 'core/config/config.dart';
 import 'core/shared/shared.dart';

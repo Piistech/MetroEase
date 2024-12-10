@@ -1,4 +1,4 @@
-import 'package:easy_mrt/core/shared/shared.dart';
+import '../../../../core/shared/shared.dart';
 
 class NavigationContainerCubit extends Cubit<int> {
   NavigationContainerCubit() : super(0);

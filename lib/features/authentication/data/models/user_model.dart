@@ -1,5 +1,5 @@
-import 'package:easy_mrt/core/shared/extension/authentication.dart';
-import 'package:easy_mrt/features/authentication/domain/entities/user_entity.dart';
+import '../../../../core/shared/extension/authentication.dart';
+import '../../domain/entities/user_entity.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import '../../../../core/shared/shared.dart';

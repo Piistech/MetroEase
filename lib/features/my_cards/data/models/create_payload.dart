@@ -1,4 +1,4 @@
-import 'package:easy_mrt/features/scan_mrt/domain/entities/transaction.dart';
+import '../../../scan_mrt/domain/entities/transaction.dart';
 
 class CreatePayload {
   final CardTranslationEntities card;

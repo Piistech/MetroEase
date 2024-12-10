@@ -1,5 +1,5 @@
-import 'package:easy_mrt/features/my_cards/data/models/create_payload.dart';
-import 'package:easy_mrt/features/scan_mrt/domain/entities/transaction.dart';
+import '../../data/models/create_payload.dart';
+import '../../../scan_mrt/domain/entities/transaction.dart';
 
 import '../../../../core/shared/shared.dart';
 import '../../my_cards.dart';

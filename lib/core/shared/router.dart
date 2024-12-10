@@ -1,5 +1,5 @@
-import 'package:easy_mrt/core/config/config.dart';
-import 'package:easy_mrt/features/acknowledgments/presentation/bloc/acknowledgment_bloc.dart';
+import '../config/config.dart';
+import '../../features/acknowledgments/presentation/bloc/acknowledgment_bloc.dart';
 import 'package:easy_mrt/features/acknowledgments/presentation/pages/acknoledgement.dart';
 import 'package:easy_mrt/features/authentication/authentication.dart';
 import 'package:easy_mrt/features/authentication/domain/entities/user_entity.dart';

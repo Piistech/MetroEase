@@ -1,5 +1,5 @@
-import 'package:easy_mrt/core/shared/shared.dart';
-import 'package:easy_mrt/features/authentication/domain/usercases/forgot_password.dart';
+import '../../../../core/shared/shared.dart';
+import '../../domain/usercases/forgot_password.dart';
 
 part 'forgot_password_state.dart';
 

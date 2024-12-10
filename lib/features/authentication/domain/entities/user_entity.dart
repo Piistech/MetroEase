@@ -1,4 +1,4 @@
-import 'package:easy_mrt/core/shared/extension/authentication.dart';
+import '../../../../core/shared/extension/authentication.dart';
 
 import '../../../../core/shared/shared.dart';
 

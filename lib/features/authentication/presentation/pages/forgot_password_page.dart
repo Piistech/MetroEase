@@ -1,9 +1,9 @@
-import 'package:easy_mrt/core/shared/mixin/theme.dart';
-import 'package:easy_mrt/core/shared/resource.dart';
-import 'package:easy_mrt/core/shared/shared.dart';
-import 'package:easy_mrt/core/shared/task_notifier.dart';
-import 'package:easy_mrt/core/shared/widgets/awesome_dialog.dart';
-import 'package:easy_mrt/features/authentication/presentation/cubit/forgot_password_cubit.dart';
+import '../../../../core/shared/mixin/theme.dart';
+import '../../../../core/shared/resource.dart';
+import '../../../../core/shared/shared.dart';
+import '../../../../core/shared/task_notifier.dart';
+import '../../../../core/shared/widgets/awesome_dialog.dart';
+import '../cubit/forgot_password_cubit.dart';
 
 class ForgotPasswordPage extends StatefulWidget {
   static const String path = '/forgot-password';

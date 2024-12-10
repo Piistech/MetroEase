@@ -1,7 +1,7 @@
-import 'package:easy_mrt/core/shared/shared.dart';
-import 'package:easy_mrt/features/acknowledgments/data/datasources/acknowledgement_text.dart';
-import 'package:easy_mrt/features/acknowledgments/presentation/bloc/acknowledgment_bloc.dart';
-import 'package:easy_mrt/features/scan_mrt/scan_mrt.dart';
+import '../../../../core/shared/shared.dart';
+import '../../data/datasources/acknowledgement_text.dart';
+import '../bloc/acknowledgment_bloc.dart';
+import '../../../scan_mrt/scan_mrt.dart';
 import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 
 class AcknowledgementPage extends StatelessWidget {

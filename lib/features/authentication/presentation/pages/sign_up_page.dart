@@ -1,15 +1,15 @@
 import 'dart:developer';
 
-import 'package:easy_mrt/core/shared/mixin/theme.dart';
-import 'package:easy_mrt/core/shared/resource.dart';
-import 'package:easy_mrt/core/shared/shared.dart';
-import 'package:easy_mrt/core/shared/task_notifier.dart';
-import 'package:easy_mrt/core/shared/widgets/url_opener.dart';
-import 'package:easy_mrt/features/authentication/data/models/sign_up_payload.dart';
-import 'package:easy_mrt/features/authentication/presentation/cubit/authentication_cubit.dart';
-import 'package:easy_mrt/features/authentication/presentation/cubit/signup_cubit.dart';
-import 'package:easy_mrt/features/my_cards/presentation/bloc/find_all_bloc.dart';
-import 'package:easy_mrt/features/scan_mrt/presentation/pages/scan_mrt.dart';
+import '../../../../core/shared/mixin/theme.dart';
+import '../../../../core/shared/resource.dart';
+import '../../../../core/shared/shared.dart';
+import '../../../../core/shared/task_notifier.dart';
+import '../../../../core/shared/widgets/url_opener.dart';
+import '../../data/models/sign_up_payload.dart';
+import '../cubit/authentication_cubit.dart';
+import '../cubit/signup_cubit.dart';
+import '../../../my_cards/presentation/bloc/find_all_bloc.dart';
+import '../../../scan_mrt/presentation/pages/scan_mrt.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter_svg/svg.dart';

@@ -1,4 +1,4 @@
-import 'package:easy_mrt/core/config/dependencies/acknowledgement.dart';
+import 'dependencies/acknowledgement.dart';
 import 'package:easy_mrt/features/authentication/domain/usercases/email_login.dart';
 import 'package:easy_mrt/features/authentication/domain/usercases/email_signup.dart';
 import 'package:easy_mrt/features/authentication/domain/usercases/forgot_password.dart';

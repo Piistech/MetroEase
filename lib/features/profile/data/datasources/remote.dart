@@ -1,4 +1,4 @@
-import 'package:easy_mrt/features/profile/data/models/delete_payload.dart';
+import '../models/delete_payload.dart';
 import 'package:image_picker/image_picker.dart';
 
 import '../../../../core/shared/shared.dart';

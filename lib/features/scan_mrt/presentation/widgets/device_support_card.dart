@@ -1,5 +1,5 @@
-import 'package:easy_mrt/core/shared/shared.dart';
-import 'package:easy_mrt/core/shared/nfc/nfc_reader.dart';
+import '../../../../core/shared/shared.dart';
+import '../../../../core/shared/nfc/nfc_reader.dart';
 import 'package:flutter/cupertino.dart';
 
 class DeviceSupportCard extends StatelessWidget {

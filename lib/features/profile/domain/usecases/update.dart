@@ -1,4 +1,4 @@
-import 'package:easy_mrt/features/authentication/data/models/profile_update.dart';
+import '../../../authentication/data/models/profile_update.dart';
 
 import '../../../../core/shared/shared.dart';
 import '../../profile.dart';

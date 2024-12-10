@@ -1,4 +1,4 @@
-import 'package:easy_mrt/core/shared/shared.dart';
+import '../shared.dart';
 
 class CustomContainer extends StatelessWidget {
   final Widget child;

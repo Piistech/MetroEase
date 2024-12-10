@@ -1,6 +1,6 @@
-import 'package:easy_mrt/core/shared/shared.dart';
-import 'package:easy_mrt/core/shared/widgets/custom_container.dart';
-import 'package:easy_mrt/features/scan_mrt/domain/entities/transaction.dart';
+import '../../../../core/shared/shared.dart';
+import '../../../../core/shared/widgets/custom_container.dart';
+import '../../domain/entities/transaction.dart';
 import 'package:intl/intl.dart';
 
 class TransactionCard extends StatelessWidget {

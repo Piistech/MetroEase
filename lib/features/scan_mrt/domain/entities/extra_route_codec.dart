@@ -1,5 +1,5 @@
-import 'package:easy_mrt/core/shared/shared.dart';
-import 'package:easy_mrt/features/scan_mrt/domain/entities/transaction.dart';
+import '../../../../core/shared/shared.dart';
+import 'transaction.dart';
 
 class CardTranslationEntitiesCodec extends Codec<
     ValueNotifier<CardTranslationEntities>, Map<String, dynamic>> {

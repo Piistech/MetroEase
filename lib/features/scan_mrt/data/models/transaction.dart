@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:easy_mrt/features/scan_mrt/domain/entities/transaction.dart';
+import '../../domain/entities/transaction.dart';
 
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 class TransactionModel extends TransactionEntities {

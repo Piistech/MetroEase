@@ -1,5 +1,5 @@
-import 'package:easy_mrt/features/my_cards/data/models/card_update_payload.dart';
-import 'package:easy_mrt/features/my_cards/domain/usecases/update_transaction.dart';
+import '../../data/models/card_update_payload.dart';
+import '../../domain/usecases/update_transaction.dart';
 import 'package:easy_mrt/features/scan_mrt/domain/entities/transaction.dart';
 
 import '../../../../core/shared/shared.dart';

@@ -1,5 +1,5 @@
-import 'package:easy_mrt/core/shared/resource.dart';
-import 'package:easy_mrt/core/shared/shared.dart';
+import '../../../../core/shared/resource.dart';
+import '../../../../core/shared/shared.dart';
 import 'package:flutter_svg/svg.dart';
 
 class MRTCard extends StatelessWidget {

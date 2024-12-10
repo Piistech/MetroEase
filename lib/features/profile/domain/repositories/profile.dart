@@ -1,5 +1,5 @@
-import 'package:easy_mrt/features/authentication/data/models/profile_update.dart';
-import 'package:easy_mrt/features/profile/data/models/delete_payload.dart';
+import '../../../authentication/data/models/profile_update.dart';
+import '../../data/models/delete_payload.dart';
 
 import '../../../../core/shared/shared.dart';
 

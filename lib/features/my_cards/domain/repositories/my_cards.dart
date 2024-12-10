@@ -1,7 +1,7 @@
-import 'package:easy_mrt/features/my_cards/data/models/card_update_payload.dart';
-import 'package:easy_mrt/features/my_cards/data/models/create_payload.dart';
-import 'package:easy_mrt/features/my_cards/data/models/delete_payload.dart';
-import 'package:easy_mrt/features/scan_mrt/data/models/transaction.dart';
+import '../../data/models/card_update_payload.dart';
+import '../../data/models/create_payload.dart';
+import '../../data/models/delete_payload.dart';
+import '../../../scan_mrt/data/models/transaction.dart';
 import 'package:easy_mrt/features/scan_mrt/domain/entities/transaction.dart';
 
 import '../../../../core/shared/shared.dart';

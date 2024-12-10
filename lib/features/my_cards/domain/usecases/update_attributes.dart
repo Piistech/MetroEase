@@ -1,4 +1,4 @@
-import 'package:easy_mrt/features/my_cards/data/models/card_update_payload.dart';
+import '../../data/models/card_update_payload.dart';
 
 import '../../../../core/shared/shared.dart';
 import '../../my_cards.dart';

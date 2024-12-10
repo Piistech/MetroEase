@@ -1,6 +1,6 @@
 import 'dart:ui' as ui;
 
-import 'package:easy_mrt/core/shared/shared.dart';
+import '../../../../core/shared/shared.dart';
 
 //Add this CustomPaint widget to the Widget Tree
 // CustomPaint(

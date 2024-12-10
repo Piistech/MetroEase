@@ -1,4 +1,4 @@
-import 'package:easy_mrt/core/shared/shared.dart';
+import '../../../../core/shared/shared.dart';
 
 part 'acknowledgment_event.dart';
 part 'acknowledgment_state.dart';

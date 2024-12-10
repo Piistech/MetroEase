@@ -1,9 +1,9 @@
 import 'dart:developer';
 
-import 'package:easy_mrt/features/authentication/data/models/login_payload.dart';
-import 'package:easy_mrt/features/authentication/data/models/profile_update.dart';
+import '../models/login_payload.dart';
+import '../models/profile_update.dart';
 
-import 'package:easy_mrt/features/authentication/data/models/sign_up_payload.dart';
+import '../models/sign_up_payload.dart';
 
 import 'package:easy_mrt/features/authentication/domain/entities/user_entity.dart';
 import 'package:firebase_auth/firebase_auth.dart' show UserCredential;

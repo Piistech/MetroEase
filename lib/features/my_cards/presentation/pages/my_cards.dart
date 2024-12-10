@@ -1,4 +1,4 @@
-import 'package:easy_mrt/core/shared/mixin/theme.dart';
+import '../../../../core/shared/mixin/theme.dart';
 import 'package:easy_mrt/core/shared/resource.dart';
 import 'package:easy_mrt/core/shared/widgets/custom_container.dart';
 import 'package:easy_mrt/features/my_cards/presentation/bloc/find_all_bloc.dart';

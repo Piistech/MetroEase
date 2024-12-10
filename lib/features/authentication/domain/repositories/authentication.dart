@@ -1,7 +1,7 @@
-import 'package:easy_mrt/features/authentication/data/models/login_payload.dart';
-import 'package:easy_mrt/features/authentication/data/models/profile_update.dart';
-import 'package:easy_mrt/features/authentication/data/models/sign_up_payload.dart';
-import 'package:easy_mrt/features/authentication/domain/entities/user_entity.dart';
+import '../../data/models/login_payload.dart';
+import '../../data/models/profile_update.dart';
+import '../../data/models/sign_up_payload.dart';
+import '../entities/user_entity.dart';
 
 import '../../../../core/shared/shared.dart';
 
