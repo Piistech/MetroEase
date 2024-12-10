@@ -69,7 +69,11 @@
             android:name="android.nfc.action.TECH_DISCOVERED"
             android:resource="@xml/nfc_tech_filter" />
     
-        
+        <!-- AdsMod -->
+        <!-- <meta-data
+        android:name="com.google.android.gms.ads.APPLICATION_ID"
+        android:value="@string/ads_id"/> -->
+         <!-- AdsMod End -->
     </application>
 
 </manifest>
