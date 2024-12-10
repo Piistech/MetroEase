@@ -3,4 +3,5 @@ class AppConstants {
 
   static const String appName = 'MetroEase';
   static const String moto = 'Your MRT card management';
+  static const bool isEnableGoogleAds = false;
 }

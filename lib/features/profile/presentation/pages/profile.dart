@@ -398,7 +398,7 @@ class _ProfilePageState extends State<ProfilePage> with ThemeMixin {
                                                   : const Color(0xFF1B1E28),
                                             ),
                                           ),
-                                          onTap: () {
+                                          onTap: () { 
                                             context.pushNamed(
                                                 AcknowledgementPage.name);
                                           },

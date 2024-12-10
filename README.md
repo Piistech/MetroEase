@@ -1,4 +1,6 @@
+Here is the updated README without Google Ads features and with added instructions for setting up Firebase using a demo `firebase_options.dart` and automating the configuration with FlutterFire CLI:
 
+---
 
 # METRO-EASE
 
@@ -8,25 +10,25 @@ This project is a mobile application that offers fare calculation for various ro
 
 The app is built using **Flutter** and leverages Firebase for authentication and card management functionalities. The project is inspired by [Aniruddha Adhikary](https://github.com/aniruddha-adhikary), whose open-source project provided a solid foundation for organizing and calculating fare data for MRT routes.
 
-
 ## Inspiration
-This project is inspired by the work of Aniruddha Adhikary, who originally created the data fetching mechanism for MRT routes. This work has been organized and extended to provide Firebase integration for authentication and card management.The original project is licensed under **GPL-3.0** and this modified version continues to follow the same licensing terms.
+
+This project is inspired by the work of Aniruddha Adhikary, who originally created the data fetching mechanism for MRT routes. This work has been organized and extended to provide Firebase integration for authentication and card management. The original project is licensed under **GPL-3.0**, and this modified version continues to follow the same licensing terms.
 
 We thank [Aniruddha Adhikary](https://github.com/aniruddha-adhikary) for their contribution to open-source development. You can view the original repository [here](https://github.com/aniruddha-adhikary/mrt-buddy/).
 
 ## Extended Features
+
 - **Firebase Authentication**: Users can sign in using Firebase authentication.
 - **Card Management**: Users can manage their cards and view their fare history.
-- **Change Card Holder Name**: Users can update the card holder name.
+- **Change Card Holder Name**: Users can update the cardholder name.
 - **Firebase Firestore Integration**: The app uses Firebase Firestore to store fare data and user information.
 - **Android In-App Update**: The app supports Android In-App Update functionality.
 - **Cross-Platform Support**: The app is built using Flutter, which allows it to run on both Android and iOS devices.
 - **Change Theme**: Users can switch between light and dark themes.
 - **Account Deletion**: Users can delete their account and all associated data from the app.
 - **User Profile Update**: Users can update their profile information.
-- **Google Ads Integration**: The app includes Google Ads functionality.
-    To get started with this project, follow the steps below:
 
+To get started with this project, follow the steps below:
 
 ## Setup Instructions
 
@@ -35,6 +37,7 @@ We thank [Aniruddha Adhikary](https://github.com/aniruddha-adhikary) for their c
 First, you need to create a Firebase project to enable authentication and card management.
 
 #### Firebase Authentication Setup
+
 - Go to [Firebase Console](https://console.firebase.google.com/) and create a new Firebase project.
 - Add Firebase Authentication to your project and configure the necessary sign-in methods (e.g., email/password, Google sign-in, etc.).
 - Enable Firebase Firestore for storing user and card data.
@@ -65,11 +68,9 @@ fare: {
 }
 ```
 
-Each key represents a route, and the value represents the fare for that route in Bangladeshi Taka (BDT).
-
 ### 2. Clone the Repository
 
-To start working with the project, clone the repository to your local machine.
+To start working with the project, clone the repository to your local machine:
 
 ```bash
 git clone https://github.com/Piistech/MetroEase.git
@@ -77,7 +78,7 @@ git clone https://github.com/Piistech/MetroEase.git
 
 ### 3. Install Dependencies
 
-Once the repository is cloned, navigate to the project directory and install the necessary dependencies.
+Navigate to the project directory and install the necessary dependencies:
 
 ```bash
 cd MetroEase
@@ -86,9 +87,44 @@ flutter pub get
 
 ### 4. Configure Firebase in Your Flutter Project
 
-- Download the Firebase configuration files for both Android and iOS from the Firebase console:
-  - For Android, download `google-services.json` and place it in the `android/app` directory.
-  - For iOS, download `GoogleService-Info.plist` and place it in the `ios/Runner` directory.
+#### Manual Configuration
+
+- Download the Firebase configuration files for both Android and iOS from the Firebase Console:
+  - For Android: `google-services.json` -> Place it in the `android/app` directory.
+  - For iOS: `GoogleService-Info.plist` -> Place it in the `ios/Runner` directory.
+
+#### Automate with FlutterFire CLI
+
+Alternatively, use the FlutterFire CLI to generate the necessary `firebase_options.dart` file:
+
+1. Install the Firebase CLI:  
+   [Download and install Firebase CLI](https://firebase.google.com/docs/cli).
+2. Add the FlutterFire CLI:  
+   ```bash
+   dart pub global activate flutterfire_cli
+   ```
+3. Configure the project with Firebase:  
+   Run the following command and follow the prompts to configure your app:  
+   ```bash
+   flutterfire configure
+   ```
+4. The `firebase_options.dart` file will be generated automatically in the `lib` folder. Import this file in your project where Firebase initialization is needed.
+
+#### Example `firebase_options.dart`:
+
+```dart
+import 'package:firebase_core/firebase_core.dart';
+
+const FirebaseOptions firebaseOptions = FirebaseOptions(
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_PROJECT_ID.appspot.com",
+  messagingSenderId: "YOUR_SENDER_ID",
+  appId: "YOUR_APP_ID",
+  measurementId: "YOUR_MEASUREMENT_ID",
+);
+```
 
 ### 5. Run the Project
 
@@ -114,33 +150,9 @@ service cloud.firestore {
 }
 ```
 
-### 7. Additional Setup (Optional)
+### 7. Android In-App Update Integration
 
-
-### Google Ads Integration
-
-This project also includes Google Ads functionality. If you want to add or configure Google Ads, you need to create a collection in Firebase to store the ad unit keys.
-
-#### Firebase Collection for Ads
-
-Create a Firebase collection called `googleAdsUnit` and add the following sub-collections and their respective keys:
-
-```
-googleAdsUnit/ads
-  - banner: 
-      - android: "KEY"
-      - ios: "KEY"
-  - reward:
-      - android: "KEY"
-      - ios: "KEY"
-```
-
-Replace `"KEY"` with the actual keys provided by Google Ads for both Android and iOS.
-
-
-### 8. Android In-App Update Integration
-
-This project also includes Android In-App Update functionality. You don't need to do anything to enable this feature. It is already integrated into the project.
+This project includes Android In-App Update functionality. No additional setup is needed.
 
 ## License
 

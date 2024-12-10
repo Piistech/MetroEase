@@ -1,4 +1,5 @@
 import 'package:easy_mrt/core/config/config.dart';
+import 'package:easy_mrt/features/acknowledgments/presentation/bloc/acknowledgment_bloc.dart';
 import 'package:easy_mrt/features/acknowledgments/presentation/pages/acknoledgement.dart';
 import 'package:easy_mrt/features/authentication/authentication.dart';
 import 'package:easy_mrt/features/authentication/domain/entities/user_entity.dart';
@@ -33,7 +34,6 @@ final router = GoRouter(
   initialLocation: ScanMrtPage.path,
   navigatorKey: rootNavigationKey,
   debugLogDiagnostics: true,
-  // extraCodec: CardTranslationEntitiesCodec(),
   routes: [
     GoRoute(
       path: LoginPage.path,
@@ -98,6 +98,17 @@ final router = GoRouter(
                   child: const ScanMrtPage(),
                 );
               },
+              // if not the acknowledged page, show the dialog to acknowledge
+              // on the first time
+              redirect: (context, state) {
+                // log("State Extra ${context.read<AcknowledgmentBloc>().state}");
+                if (context.read<AcknowledgmentBloc>().state
+                    is AcknowledgmentViewed) {
+                  return null;
+                } else {
+                  return AcknowledgementPage.path;
+                }
+              },
             ),
           ],
         ),
@@ -145,8 +156,11 @@ final router = GoRouter(
     GoRoute(
       path: AcknowledgementPage.path,
       name: AcknowledgementPage.name,
-      builder: (context, state) {
-        return const AcknowledgementPage();
+      pageBuilder: (context, state) {
+        final bool showNextButton = (state.extra ?? true) as bool;
+        return NoTransitionPage(
+          child: AcknowledgementPage(showNextButton: showNextButton),
+        );
       },
     ),
     GoRoute(

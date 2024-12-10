@@ -1,10 +1,9 @@
 import 'dart:developer';
 
+import 'package:easy_mrt/features/acknowledgments/presentation/bloc/acknowledgment_bloc.dart';
 import 'package:easy_mrt/features/authentication/presentation/cubit/authentication_cubit.dart';
 import 'package:easy_mrt/features/authentication/presentation/cubit/navigation_container_cubit.dart';
-import 'package:easy_mrt/features/dashboard/presentation/pages/navigation_container.dart';
 import 'package:easy_mrt/features/fare/fare.dart';
-import 'package:easy_mrt/features/google_ads/presentation/bloc/find_all_ads_bloc.dart';
 import 'package:easy_mrt/features/my_cards/my_cards.dart';
 
 import 'core/config/config.dart';
@@ -20,9 +19,9 @@ void main() async {
         BlocProvider(create: (_) => sl<AuthenticationCubit>()),
         BlocProvider(create: (_) => sl<FindAllMyCardsBloc>()),
         BlocProvider(create: (_) => sl<FindFareBloc>()),
-        BlocProvider(create: (_) => sl<FindAllAdsBloc>()),
         BlocProvider(create: (context) => sl<UpdateCardBloc>()),
         BlocProvider(create: (_) => sl<CreateMyCardsBloc>()),
+        BlocProvider(create: (_) => sl<AcknowledgmentBloc>()),
         BlocProvider(
             create: (_) => sl<NavigationContainerCubit>()..changeIndex(1)),
       ],
@@ -45,9 +44,7 @@ class _MainAppState extends State<MainApp> {
     if (context.read<FindFareBloc>().state is! FindFareDone) {
       context.read<FindFareBloc>().add(const FindFare());
     }
-    if (context.read<FindAllAdsBloc>().state is! FindAllAdsDone) {
-      context.read<FindAllAdsBloc>().add(const FindAllAds());
-    }
+
     if (context.read<FindAllMyCardsBloc>().state is! FindAllMyCardsDone &&
         sl<AuthenticationCubit>().state is Authenticated) {
       context.read<FindAllMyCardsBloc>().add(const FindAllMyCards());

@@ -7,7 +7,6 @@ import 'package:easy_mrt/features/authentication/data/models/profile_update.dart
 import 'package:easy_mrt/features/authentication/domain/entities/user_entity.dart';
 import 'package:easy_mrt/features/authentication/presentation/cubit/authentication_cubit.dart';
 import 'package:easy_mrt/features/authentication/presentation/pages/login_page.dart';
-import 'package:easy_mrt/features/google_ads/presentation/widgets/banner.dart';
 import 'package:easy_mrt/features/profile/profile.dart';
 import 'package:image_picker/image_picker.dart';
 
@@ -48,7 +47,6 @@ class _EditAccountState extends State<EditAccount> with ThemeMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: const BannerAdsWidget(),
       backgroundColor:
           isDarkMode ? theme.scaffoldBackgroundColor : Colors.white,
       appBar: AppBar(

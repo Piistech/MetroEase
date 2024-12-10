@@ -1,3 +1,4 @@
+import 'package:easy_mrt/core/config/dependencies/acknowledgement.dart';
 import 'package:easy_mrt/features/authentication/domain/usercases/email_login.dart';
 import 'package:easy_mrt/features/authentication/domain/usercases/email_signup.dart';
 import 'package:easy_mrt/features/authentication/domain/usercases/forgot_password.dart';
@@ -11,17 +12,13 @@ import 'package:easy_mrt/features/authentication/presentation/cubit/login_cubit.
 import 'package:easy_mrt/features/authentication/presentation/cubit/navigation_container_cubit.dart';
 import 'package:easy_mrt/features/authentication/presentation/cubit/signup_cubit.dart';
 import 'package:easy_mrt/features/authentication/presentation/cubit/update_account_cubit.dart';
-import 'package:easy_mrt/features/google_ads/domain/usecase/find.dart';
-import 'package:easy_mrt/features/google_ads/presentation/bloc/find_all_ads_bloc.dart';
 import 'package:easy_mrt/features/my_cards/domain/usecases/update_transaction.dart';
 import 'package:easy_mrt/firebase_options.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 import '../shared/shared.dart';
 //! mason:linking-imports - DO NOT REMOVE THIS COMMENT --------------------------->
-import '../../features/google_ads/google_ads.dart';
 import '../../features/my_cards/my_cards.dart';
 import '../../features/fare/fare.dart';
 import '../../features/profile/profile.dart';
@@ -32,7 +29,6 @@ import '../../features/scan_mrt/scan_mrt.dart';
 part 'dependencies.dart';
 part 'network_certificates.dart';
 //! mason:linking-dependencies - DO NOT REMOVE THIS COMMENT ---------------------->
-part 'dependencies/google_ads.dart';
 part 'dependencies/my_cards.dart';
 part 'dependencies/fare.dart';
 part 'dependencies/profile.dart';
@@ -57,7 +53,6 @@ class AppConfig {
     await Firebase.initializeApp(
       options: DefaultFirebaseOptions.currentPlatform,
     );
-    MobileAds.instance.initialize();
 
     // Initialize the configurations
     await _setupDependencies();

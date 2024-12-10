@@ -7,7 +7,6 @@ Future<void> _setupDependencies() async {
 
   await Future.wait([
     //! mason:linking-dependencies - DO NOT REMOVE THIS COMMENT --------------------------->
-    googleAdsDependencies,
     myCardsDependencies,
     fareDependencies,
     profileDependencies,
@@ -15,6 +14,7 @@ Future<void> _setupDependencies() async {
     authDependencies,
     dashboardDependencies,
     scanMrtDependencies,
+    acknowledgementDependencies,
   ]);
 }
 

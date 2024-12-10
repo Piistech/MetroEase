@@ -1,5 +1,4 @@
 import 'package:easy_mrt/core/shared/nfc/nfc_reader.dart';
-import 'package:easy_mrt/features/google_ads/presentation/widgets/Inline_adaptive.dart';
 import 'package:easy_mrt/features/scan_mrt/domain/entities/transaction.dart';
 import 'package:easy_mrt/features/scan_mrt/presentation/widgets/device_support_card.dart';
 import 'package:easy_mrt/features/scan_mrt/presentation/widgets/mrt_card_widget.dart';
@@ -44,7 +43,6 @@ class ScanMrtPage extends StatelessWidget {
                       DeviceSupportCard(
                         theme: theme,
                       ),
-                      const SliverToBoxAdapter(child: InlineAdaptive()),
                     ],
                   );
                 } else if (data.transactions.isEmpty) {
@@ -57,7 +55,6 @@ class ScanMrtPage extends StatelessWidget {
                       DeviceSupportCard(
                         theme: theme,
                       ),
-                      const SliverToBoxAdapter(child: InlineAdaptive()),
                     ],
                   );
                 } else {
@@ -125,7 +122,6 @@ class ScanMrtPage extends StatelessWidget {
                   DeviceSupportCard(
                     theme: theme,
                   ),
-                  const SliverToBoxAdapter(child: InlineAdaptive()),
                 ],
               );
             },

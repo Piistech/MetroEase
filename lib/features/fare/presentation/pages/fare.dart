@@ -4,7 +4,6 @@ import 'package:easy_mrt/core/shared/nfc/nfc_reader.dart';
 import 'package:easy_mrt/core/shared/resource.dart';
 import 'package:easy_mrt/core/shared/widgets/custom_container.dart';
 import 'package:easy_mrt/features/fare/fare.dart';
-import 'package:easy_mrt/features/google_ads/presentation/widgets/banner.dart';
 import 'package:easy_mrt/features/scan_mrt/domain/entities/transaction.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -39,7 +38,6 @@ class _FarePageState extends State<FarePage> {
         final theme = state.scheme;
         final isDarkMode = state.mode == ThemeMode.dark;
         return Scaffold(
-          bottomNavigationBar: const BannerAdsWidget(),
           backgroundColor: theme.backgroundPrimary,
           body: CustomScrollView(
             slivers: [

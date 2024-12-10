@@ -2,8 +2,6 @@ import 'package:easy_mrt/core/shared/mixin/theme.dart';
 import 'package:easy_mrt/core/shared/shared.dart';
 import 'package:easy_mrt/core/shared/task_notifier.dart';
 import 'package:easy_mrt/core/shared/widgets/awesome_dialog.dart';
-import 'package:easy_mrt/features/google_ads/presentation/widgets/Inline_adaptive.dart';
-import 'package:easy_mrt/features/google_ads/presentation/widgets/rewards_navigate_to.dart';
 import 'package:easy_mrt/features/my_cards/data/models/card_update_payload.dart';
 import 'package:easy_mrt/features/my_cards/data/models/delete_payload.dart';
 import 'package:easy_mrt/features/my_cards/my_cards.dart';
@@ -37,9 +35,7 @@ class _MyCardDetailsPageState extends State<MyCardDetailsPage> with ThemeMixin {
   @override
   void initState() {
     super.initState();
-    RewardsNavigateTo.instance.onNavigateTo(
-      context: context,
-    );
+
     nameController = TextEditingController(text: widget.card.userName);
   }
 
@@ -106,7 +102,6 @@ class _MyCardDetailsPageState extends State<MyCardDetailsPage> with ThemeMixin {
             ),
           ),
           SliverToBoxAdapter(child: 20.verticalSpace),
-          const SliverToBoxAdapter(child: InlineAdaptive()),
           SliverPadding(
             padding: EdgeInsets.symmetric(vertical: 10.h, horizontal: 25.w),
             sliver: SliverList.separated(

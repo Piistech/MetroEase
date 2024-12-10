@@ -47,21 +47,21 @@ const String acknowledgementText = '''
 <body>
     <div class="container">
         <h2>Acknowledgment</h2>
-        <p>
+        <p style="text-align: justify;">
             This project is an enhanced version of the original MRT Buddy application created by 
             <strong>Aniruddha Adhikary</strong>. We acknowledge the significant work and inspiration provided by the original author.
         </p>
-        <p>
+        <p style="text-align: justify;">
             The original project is available on GitHub at 
             <a href="https://github.com/aniruddha-adhikary/mrt-buddy/" target="_blank">MRT Buddy GitHub Repository</a> and details can be found at 
             <a href="https://mrtbuddy.com/" target="_blank">MRT Buddy Website</a>.
         </p>
-        <p>
+        <p style="text-align: justify;">
             This enhanced version has been developed by <strong>PIISTECH LTD</strong>, extending the functionality 
             while maintaining the core ideas. Learn more about our work at 
             <a href="https://www.piistech.com/" target="_blank">PIISTECH LTD Website</a>.
         </p>
-        <p>
+        <p style="text-align: justify;">
             Our gratitude goes to all contributors and supporters of open-source projects that inspire innovation 
             and collaboration within the development community.
         </p>
