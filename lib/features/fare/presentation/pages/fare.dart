@@ -146,7 +146,7 @@ class _FarePageState extends State<FarePage> {
                                         ),
                                         10.verticalSpace,
                                         Text(
-                                          "Fare: \$${fareValue.toStringAsFixed(2)}",
+                                          "Fare: ৳${fareValue.toStringAsFixed(2)}",
                                           style: GoogleFonts.roboto(
                                             color: theme.textPrimary,
                                             fontSize: 19.sp,
@@ -189,7 +189,7 @@ class _FarePageState extends State<FarePage> {
                                                   return Column(
                                                     children: [
                                                       Text(
-                                                        "Balance: \$${balance.toStringAsFixed(2)}",
+                                                        "Balance: ৳${balance.toStringAsFixed(2)}",
                                                         style:
                                                             GoogleFonts.roboto(
                                                           color: theme.positive,

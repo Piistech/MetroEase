@@ -391,22 +391,24 @@ class _ProfilePageState extends State<ProfilePage> with ThemeMixin {
                                         16.verticalSpace,
                                         CupertinoListTile(
                                           title: Text(
-                                            "Acknowledgement/About",
+                                            "Acknowledgement",
                                             style: TextStyle(
                                               color: isDarkMode
                                                   ? theme.textPrimary
                                                   : const Color(0xFF1B1E28),
                                             ),
                                           ),
-                                          onTap: () { 
+                                          onTap: () {
                                             context.pushNamed(
-                                                AcknowledgementPage.name);
+                                              AcknowledgementPage.name,
+                                              extra: false,
+                                            );
                                           },
                                           leading: Image.asset(
                                             R.ASSETS_ICONS_ACKNOLEDGEMENT_PNG,
                                           ),
                                           subtitle: const Text(
-                                              "Acknowledgement and about page"),
+                                              "View Acknowledgement"),
                                           trailing:
                                               const CupertinoListTileChevron(),
                                         ),

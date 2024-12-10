@@ -1,7 +1,6 @@
 import '../../../../core/shared/resource.dart';
 import '../../../../core/shared/shared.dart';
 import '../../../../core/shared/widgets/custom_container.dart';
-import '../../../acknowledgments/presentation/pages/acknoledgement.dart';
 import '../../../authentication/presentation/pages/login_page.dart';
 
 class NotLoginDialog extends StatelessWidget {
@@ -81,30 +80,6 @@ class NotLoginDialog extends StatelessWidget {
               ),
             ),
             const Spacer(),
-            OutlinedButton.icon(
-              icon: Icon(
-                Icons.info_outline,
-                color: theme.textPrimary,
-              ),
-              style: OutlinedButton.styleFrom(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(6.r),
-                ),
-                side: BorderSide(
-                  color: theme.textPrimary,
-                ),
-              ),
-              onPressed: () {
-                context.pushNamed(AcknowledgementPage.name);
-              },
-              label: Text(
-                'Acknowledgements',
-                style: GoogleFonts.dmSans(
-                  fontSize: 12.sp,
-                  color: theme.textPrimary,
-                ),
-              ),
-            ),
             100.verticalSpace,
           ],
         ),
